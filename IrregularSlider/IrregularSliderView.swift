@@ -36,7 +36,7 @@ open class IrregularSliderView: UIView {
     fileprivate var anchorPointLabelView: UIView!
     fileprivate var anchorPoints: [Float]!
 
-    convenience init(frame: CGRect, anchorPoints: [Float]) {
+    public convenience init(frame: CGRect, anchorPoints: [Float]) {
         self.init(frame: frame)
         self.anchorPoints = anchorPoints
         setupView(with: anchorPoints)
